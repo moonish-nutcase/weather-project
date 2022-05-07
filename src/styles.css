@@ -1,0 +1,85 @@
+body {
+  padding: 0 20px;
+  background-color: black;
+}
+
+h1 {
+  color: lightblue;
+
+  position: relative;
+  top: 150px;
+  font-size: 40px;
+}
+h2 {
+  color: palevioletred;
+  font-size: 50px;
+}
+h3 {
+  color: papayawhip;
+  font-size: 20px;
+  position: relative;
+  left: 70px;
+  top: -10px;
+}
+p {
+  color: lightskyblue;
+  font-size: 15px;
+  font-weight: bold;
+}
+.city {
+  position: relative;
+  left: 270px;
+  top: 95px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: 3px solid rosybrown;
+}
+.button {
+  position: relative;
+  left: 270px;
+  top: 99px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border: 3px solid darkcyan;
+}
+.currentCityButton {
+  position: relative;
+  left: 395px;
+  top: 38px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 3px solid darkseagreen;
+}
+
+.weather {
+  text-align: left;
+  margin-top: 10px;
+  color: darkcyan;
+  font-size: 10;
+  font-weight: bold;
+}
+
+.row {
+  display: inline-flex;
+  border: 5px solid darkred;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.tempStyle {
+  color: blue;
+  font-size: medium;
+  position: relative;
+  top: -20px;
+}
+.col {
+  font-size: larger;
+  color: rosybrown;
+  margin: 10px;
+}
+
+.coder {
+  color: bisque;
+}
