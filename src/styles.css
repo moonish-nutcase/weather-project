@@ -82,4 +82,9 @@ p {
 
 .coder {
   color: bisque;
+  font-family: monospace;
+}
+.gitLink {
+  font-family: monospace;
+  color: lightskyblue;
 }
