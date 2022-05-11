@@ -1,5 +1,4 @@
 body {
-  padding: 0 20px;
   background-color: black;
 }
 
@@ -87,4 +86,9 @@ p {
 .gitLink {
   font-family: monospace;
   color: lightskyblue;
+}
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
 }
