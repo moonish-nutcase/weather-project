@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: wheat;
 }
 
 h1 {
@@ -88,6 +88,9 @@ p {
   color: lightskyblue;
 }
 .wrapper {
-  margin: 0 auto;
-  max-width: 600px;
+  margin: -160px auto;
+  max-width: 800px;
+  border: 2px solid black;
+  background-color: black;
+  padding: 85px;
 }
