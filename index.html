@@ -9,68 +9,87 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="app-shell">
-      <h1 id="headline">
-      </h1>
-      <form id="search-bar">
-        <input class="city" type="search" placeholder="Search city" id="search-input" />
-        <br />
-        <input class="button" type="submit" value="Search"id= "search-button"/>
-        <br />
-        <button class="currentCityButton" id="current-city">Current City</button>
-      </form>
-      <h2>🌩<span id ="mainTemp"></span>  <span class = "tempStyle"> <a href = "#" id="celsius-unit"> °C</a> | <a href = "#" id="fahrenheit-unit"> °F</a></span></h2>
-      <h3></h3>
-      <p>
-        
-      </p>
+        <h1 id="headline"></h1>
+        <form id="search-bar" w-100>
+          <input
+            class="city"
+            type="search"
+            placeholder="Search city"
+            id="search-input"
+          />
+          <br />
+          <input
+            class="button"
+            type="submit"
+            value="Search"
+            id="search-button"
+          />
+          <br />
+          <button class="currentCityButton" id="current-city">
+            Current City
+          </button>
+        </form>
+        <h2>
+          🌩<span id="mainTemp"></span>
+          <span class="tempStyle">
+            <a href="#" id="celsius-unit"> °C</a> |
+            <a href="#" id="fahrenheit-unit"> °F</a></span
+          >
+        </h2>
+        <h3></h3>
+        <p></p>
 
         <div class="weather">
-        Humidity: <span id="humidity"> </span>%
-        <br>
-        Wind: <span id="wind-speed"> </span>km/h
-      </div>
+          Humidity: <span id="humidity"> </span>%
+          <br />
+          Wind: <span id="wind-speed"> </span>km/h
+        </div>
 
-      <div class="row">
-        <div class="col">
-          <strong> Tue </strong> <br />
-          26° C <br />
-          ☁️
-        </div>
-        <div class="col">
+        <div class="row">
+          <div class="col">
+            <strong> Tue </strong> <br />
+            26° C <br />
+            ☁️
+          </div>
+          <div class="col">
             <strong> Wed </strong> <br />
-          35° C <br />
-          ☀️
-        </div>
-        <div class="col">
+            35° C <br />
+            ☀️
+          </div>
+          <div class="col">
             <strong> Thu </strong> <br />
-          23° C <br />
-          ⛅
-        </div>
-        <div class="col">
+            23° C <br />
+            ⛅
+          </div>
+          <div class="col">
             <strong> Fri </strong> <br />
-          21° C <br />
-          🌦
-        </div>
-        <div class="col">
+            21° C <br />
+            🌦
+          </div>
+          <div class="col">
             <strong> Sat </strong> <br />
-          18° C <br />
-          ⛈
+            18° C <br />
+            ⛈
+          </div>
+        </div>
+        <div class="sourceLink">
+          <a
+            href="https://github.com/moonish-nutcase/weather-project"
+            target="_blank"
+            class="gitLink"
+            >Open-source code</a
+          ><span class="coder"> by Munia Sircar</span>
         </div>
       </div>
     </div>
-    <div class="sourceLink"><a href="https://github.com/moonish-nutcase/weather-project" target="_blank" class="gitLink">Open-source code</a><span class="coder"> by Munia Sircar</span></div> 
-      </div>
-      </div>
-    </div>
-     
+
     <script src="src/index.js"></script>
   </body>
 </html>
