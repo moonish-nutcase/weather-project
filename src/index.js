@@ -2,7 +2,7 @@
 
 function showWeather(response) {
   console.log(response.data);
-
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#headline").innerHTML = response.data.name;
   document.querySelector("#mainTemp").innerHTML = Math.round(
     response.data.main.temp
@@ -99,5 +99,30 @@ let months = [
 let month = months[now.getMonth()];
 
 displayTime.innerHTML = `${day} ${hours}:${minutes}, ${month} ${date},  ${year}`;
+
+let celsiusTemp = null;
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  document.querySelector("#mainTemp").innerHTML = Math.round(
+    celsiusTemp * 1.8 + 32
+  );
+
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-unit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  document.querySelector("#mainTemp").innerHTML = Math.round(celsiusTemp);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+}
+
+let celsiusLink = document.querySelector("#celsius-unit");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 
 browseCity("Dhaka");

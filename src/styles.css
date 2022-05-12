@@ -94,6 +94,10 @@ form {
 .wrapper {
   margin: -160px auto;
   max-width: 800px;
-
   padding: 60px;
+}
+
+.active {
+  text-decoration: none;
+  cursor: none;
 }
