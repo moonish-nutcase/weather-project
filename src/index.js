@@ -100,7 +100,11 @@ let month = months[now.getMonth()];
 
 displayTime.innerHTML = `${day} ${hours}:${minutes}, ${month} ${date},  ${year}`;
 
+//
+
 let celsiusTemp = null;
+
+//
 
 function showFahrenheitTemp(event) {
   event.preventDefault();
@@ -115,6 +119,8 @@ function showFahrenheitTemp(event) {
 let fahrenheitLink = document.querySelector("#fahrenheit-unit");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
+//
+
 function showCelsiusTemp(event) {
   event.preventDefault();
   document.querySelector("#mainTemp").innerHTML = Math.round(celsiusTemp);
@@ -124,5 +130,7 @@ function showCelsiusTemp(event) {
 
 let celsiusLink = document.querySelector("#celsius-unit");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+//
 
 browseCity("Dhaka");
