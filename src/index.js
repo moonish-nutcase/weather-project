@@ -132,5 +132,29 @@ let celsiusLink = document.querySelector("#celsius-unit");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 //
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let forecastDays = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
+  forecastDays.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+       <div class="col-2">
+              <strong> ${day} </strong> <br />
+              26° C <br />
+              <img
+                src="http://openweathermap.org/img/wn/50d@2x.png"
+                class="weather-forecast-emoji"
+              />
+            </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+//
 
 browseCity("Dhaka");

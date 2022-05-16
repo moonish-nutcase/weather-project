@@ -72,6 +72,12 @@ form {
   margin-top: 20px;
   color: rosybrown;
   font-size: larger;
+  text-align: center;
+  line-height: 40px;
+}
+
+.weather-forecast-emoji {
+  width: 60px;
 }
 .tempStyle {
   color: blue;
