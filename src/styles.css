@@ -64,23 +64,20 @@ form {
   font-weight: bold;
 }
 
-.row {
+.weather-forecast {
   display: inline-flex;
   border: 5px solid darkred;
   padding: 20px 40px;
   border-radius: 10px;
   margin-top: 20px;
+  color: rosybrown;
+  font-size: larger;
 }
 .tempStyle {
   color: blue;
   font-size: medium;
   position: relative;
   top: -20px;
-}
-.col {
-  font-size: larger;
-  color: rosybrown;
-  margin: 10px;
 }
 
 .coder {
