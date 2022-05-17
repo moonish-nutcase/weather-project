@@ -140,11 +140,11 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-       <div class="col-2">
+       <div class="col">
               <strong> ${day} </strong> <br />
               26° C <br />
               <img
-                src="http://openweathermap.org/img/wn/50d@2x.png"
+                src="http://openweathermap.org/img/wn/04d@2x.png"
                 class="weather-forecast-emoji"
               />
             </div>
@@ -158,3 +158,4 @@ function displayForecast() {
 //
 
 browseCity("Dhaka");
+displayForecast();
