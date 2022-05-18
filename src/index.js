@@ -141,11 +141,11 @@ function displayForecast() {
       forecastHTML +
       `
        <div class="col">
-              <strong> ${day} </strong> <br />
-              26° C <br />
+              <strong id="forecast-day"> ${day} </strong>
+               <div id="forecast-temp"> 26° C </div>
               <img
                 src="http://openweathermap.org/img/wn/04d@2x.png"
-                class="weather-forecast-emoji"
+                class="weather-forecast-emoji" id="forecast-icon"
               />
             </div>
   `;
