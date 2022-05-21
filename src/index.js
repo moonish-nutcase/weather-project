@@ -134,24 +134,41 @@ let celsiusLink = document.querySelector("#celsius-unit");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 //
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
+//
 function displayForecast(response) {
   console.log(response.data.daily);
+  let weekForecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let forecastDays = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
-  forecastDays.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+
+  weekForecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
        <div class="col">
-              <strong id="forecast-day"> ${day} </strong>
-               <div id="forecast-temp"> 26° C </div>
+              <strong id="forecast-day"> ${formatDay(forecastDay.dt)} </strong>
+               <div id="forecast-temp">${Math.round(
+                 forecastDay.temp.day
+               )}° C </div>
               <img
-                src="http://openweathermap.org/img/wn/04d@2x.png"
+                src="http://openweathermap.org/img/wn/${
+                  forecastDay.weather[0].icon
+                }@2x.png"
                 class="weather-forecast-emoji" id="forecast-icon"
               />
             </div>
   `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
