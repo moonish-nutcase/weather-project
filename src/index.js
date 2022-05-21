@@ -158,8 +158,9 @@ function displayForecast(response) {
        <div class="col">
               <strong id="forecast-day"> ${formatDay(forecastDay.dt)} </strong>
                <div id="forecast-temp">${Math.round(
-                 forecastDay.temp.day
-               )}° C </div>
+                 forecastDay.temp.min
+               )}°C</div>
+               
               <img
                 src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
