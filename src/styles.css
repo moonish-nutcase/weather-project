@@ -94,6 +94,10 @@ form {
   font-family: monospace;
   color: lightskyblue;
 }
+.netlifyLink {
+  font-family: monospace;
+  color: lightskyblue;
+}
 .wrapper {
   margin: -160px auto;
   max-width: 800px;
@@ -106,6 +110,7 @@ form {
 }
 .sourceLink {
   margin-top: 10px;
+  font-size: 15px;
 }
 
 #forecast-temp-min {
