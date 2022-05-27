@@ -157,10 +157,13 @@ function displayForecast(response) {
         `
        <div class="col">
               <strong id="forecast-day"> ${formatDay(forecastDay.dt)} </strong>
-               <div id="forecast-temp">${Math.round(
-                 forecastDay.temp.min
-               )}°C</div>
                
+              <div id="forecast-temp-min">${Math.round(forecastDay.temp.min)}°
+                 <span id="forecast-temp-max">${Math.round(
+                   forecastDay.temp.max
+                 )}°</span>
+               </div>
+            
               <img
                 src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon

@@ -107,3 +107,12 @@ form {
 .sourceLink {
   margin-top: 10px;
 }
+
+#forecast-temp-min {
+  font-size: medium;
+  color: lightblue;
+}
+#forecast-temp-max {
+  font-size: medium;
+  color: cadetblue;
+}
